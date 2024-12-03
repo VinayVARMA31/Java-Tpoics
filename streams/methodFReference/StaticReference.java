@@ -1,4 +1,6 @@
 package methodFReference;
+import java.util.Arrays;
+import java.util.List;
 import java.util.function.Function;
 public class StaticReference {
 
@@ -18,6 +20,10 @@ public class StaticReference {
     StaticReference sr = new StaticReference();
     Function<Integer,Integer> twoTimes = sr::doubleNum;
     System.out.println(twoTimes.apply(5));
+    //Reference to a arbitrary object of a particular type 
+    List<String> l = Arrays.asList("vin","dsjs","ksjn");
+    l.forEach(System.out::println);
+    
   }
     
 }
